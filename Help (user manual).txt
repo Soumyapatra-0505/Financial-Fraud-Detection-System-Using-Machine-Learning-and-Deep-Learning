@@ -1,0 +1,78 @@
+Prerequisites:
+
+a) Before running the project in Google Colab, make sure you Upload the Dataset File
+	-> Upload the onlinefraud.csv file to a folder (e.g., SDPProject) in your Google Drive.
+	-> Example path: MyDrive/SDPProject/onlinefraud.csv
+
+STEPS To Run  Financial Fraud Detection System using Machine Learning and Deep Learning project:
+
+Step 1: Open Google Colab
+	-> Go to https://colab.research.google.com.
+	-> This is where you'll write and run your Python code using Google's free cloud-based Jupyter Notebook environment.
+
+Step 2: Mount Google Drive
+	-> This connects your Google Drive to Colab.
+	-> You need this to access the dataset stored in your Drive.
+
+Step 3: Load the Dataset
+	-> Load the CSV file (fraud dataset) using pandas.
+	-> Make sure the file path matches the location in your Drive.
+
+Step 4: Visualize the Data
+	-> This shows how much money is transacted in each type (e.g., CASH_OUT, PAYMENT).
+	-> Visualization helps understand trends and patterns in the data.
+
+Step 5: Preprocess the Data
+	-> get_dummies() converts categorical columns to numerical ones.
+	-> drop unnecessary columns like nameOrig and nameDest.
+
+Step 6: Split Features and Labels
+	-> X holds input features.
+	-> y is the output label (0 for normal, 1 for fraud).
+
+Step 7: Train-Test Split
+	-> Splits the data into 70% for training and 30% for testing.
+	-> random_state=42 ensures reproducibility.
+
+Step 8: Feature Scaling
+	-> StandardScaler normalizes the data (mean = 0, std = 1).
+	-> This helps ML models perform better.
+
+Step 9: Handle Class Imbalance Using SMOTE
+	-> SMOTE creates synthetic samples of minority class (fraud cases)
+
+Step 9: Train and Evaluate Machine Learning (ML) Model Before Applying SMOTE
+	-> Stochastic Gradient Descent Classifier
+	-> RandomForest
+
+step 10: Plot ROC Curve for ML Models Before and After Applying SMOTE
+	-> shows the performance of a classification model at different threshold levels.
+
+Step 11: Train and Evaluate ML Models After Applying SMOTE
+	-> Models are retrained on the balanced dataset.
+
+Step 12: Train and Evaluate Deep Learning (DL) Models Before Applying SMOTE
+	-> Recurrent Neural Network
+	-> Long Short-Term Memory
+
+Step 13: Plot ROC Curve for DL Models Before and After Applying SMOTE
+
+Step 14: Train and Evaluate DL Models After Applying SMOTE
+	-> Models are retrained on the balanced dataset.
+	-> Reshape Data for LSTM/RNN
+
+Step 15: Confusion Matrix For Proposed Model
+
+Step 17: Plot Training Performance
+	-> Shows how well the model is learning over time.
+	->Helps detect overfitting or underfitting visually.
+
+
+
+
+
+
+
+
+
+
